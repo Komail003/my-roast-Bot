@@ -8,15 +8,14 @@ import { getAI, getGenerativeModel, GoogleAIBackend } from "firebase/ai";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCU0xLBfjrz84piQbdP48JYODhR1eCefz4",
-  authDomain: "generated-arena-443910-s4.firebaseapp.com",
-  projectId: "generated-arena-443910-s4",
-  storageBucket: "generated-arena-443910-s4.firebasestorage.app",
-  messagingSenderId: "868411728836",
-  appId: "1:868411728836:web:8b47321fb79cbbd937ba91",
-  measurementId: "G-020X4B77L0",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
-
 // Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
