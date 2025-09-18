@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/chat": "http://localhost:5000", // proxy karega backend ko
+      "/chat": "http://localhost:5000", 
     },
   },
 });
