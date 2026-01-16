@@ -52,7 +52,7 @@ User says: "${msg}"
         ...prev,
         {
           sender: "bot",
-          text: "⚠️ Sorry, abhi main respond nahi kar pa raha (API error).",
+          text: "⚠️ Sorry, something went wrong (API error).",
           time: new Date(),
         },
       ]);
